@@ -1,0 +1,136 @@
+<html>
+<header>
+<link rel="stylesheet" href="css/main.css">
+	  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
+</header>
+<body>
+<h1>Welcome To Awesome Product Page Tabs!</h1>
+<p>Please make sure to read the directions below, they will walk you through how to properly setup this application.</p>
+<h3>Step 1) Enable App</h3>
+
+<b>App Status:</b>
+<select>
+  <option value="disabled selected">Select Option</option>
+  <option value="enabled">Enabled</option>
+  <option value="disabled">Disabled</option>
+</select>
+
+<h3>Step 2) Create Tab Design Rules</h3>
+	<div class="master">
+	<div class="slave">
+		<div class ="createtab">
+		<form>
+		<b>Design:</b>
+			<select id="tabs">
+  			<option value="disabled selected">Select Tab Design</option>
+			<option id="BoxCorners" value="boxcorner">Box Corners</option>
+  				<option id="RoundedCorners" value="roundedcorner" class="rounded">Rounded Corners</option>
+			</select><br>
+			<input id="tabHeading" name="heading" type="hidden">
+			<b>Activator:</b>
+				<select id="selectedActivator">
+				<option value="disabled selected">Select Activator</option>
+  				<option id="paragraph" value="paragraph">Paragraph</option>
+  				<option id="font10" value="heading1">Heading 1</option>
+  				<option id="font11" value="heading2">Heading 2</option>
+  				<option id="font12" value="heading3">Heading 3</option>
+  				<option id="font13" value="heading4">Heading 4</option>
+  				<option id="font14" value="heading5">Heading 5</option>
+  				<option id="font15" value="heading6">Heading 6</option>
+  				<option id="font15" value="blockquote">Blockquote</option>
+
+
+			</select><br>
+		<b>Font Size:</b>
+			<select id="selectedFont">
+				<option value="disabled selected">Select Font Size</option>
+  				<option id="font10" value="10">10</option>
+  				<option id="font11" value="11">11</option>
+  				<option id="font12" value="12">12</option>
+  				<option id="font13" value="13">13</option>
+  				<option id="font14" value="14">14</option>
+  				<option id="font15" value="15">15</option>
+
+			</select><br>
+		<b>Font Type:</b>
+			<select id="fontType">
+  				<option value="disabled selected">Select Font Type</option>
+  				<option id="TimesNewRoman" value="Times New Roman">Times New Roman</option>
+  				<option id="Futura" value="Futura">Futura</option>
+  			</select><br>
+		<b>Active Tab Background Color: </b> <input id="background-color" type="color" /><br>
+		<b>Inactive Tab Background Color: </b> <input id="background-color-inactive" type="color" /><br>
+		<b>Active Tab Border Color: </b> <input id="border-color" type="color" /><br>
+		<b>Inactive Tab Border Color: </b> <input id="border-color-inactive" type="color" /><br>
+		<b>Active Font Color: </b> <input id="text-color" type="color" /><br>
+		<b>Inactive Font Color: </b> <input id="text-color-inactive" type="color" /><br>
+
+		<b>Border Radius:</b>
+			<select id="borderRadius">
+				<option value="disabled selected">Select Border Radius</option>
+  				<option id="tab1" value="1">1</option>
+  				<option id="tab2" value="2">2</option>
+  				<option id="tab3" value="3">3</option>
+  				<option id="tab4" value="4">4</option>
+  				<option id="tab5" value="5">5</option>
+  				<option id="tab6" value="6">6</option>
+
+			</select>
+		<br><br>
+		<button type="button" value="Submit">Save Updates</button></form>
+		</div>
+	<div class="preview">
+		<h2>Preview Your Tab Set</h2><br>
+		<div id="previewBox" class="previewBox">
+			<div class="tabspreview"></div>
+		</div>
+		<div id="previewBox2" class="previewBox"></div>
+	</div>
+
+	</div>
+</div>
+<h3>Step 3) Create Default Tabs (These will show on every product page, not listed in block rules)</h3>
+<div class="master">
+	<div class="slave">
+		<div class ="createtab">
+			<form>
+	<b>Tab Name:</b><br>
+	<input type="text" name="tabname"><br>
+	<b>Tab Contents (Supports HTML)</b><br>
+	<div id="tabContent" contenteditable="true">
+Write your tab text here. Remember, you can use HTML here.
+</div>
+<br><br>
+		<button type="button" value="Submit">Create Default Tab</button></form>
+
+
+</form>
+</div>
+<div class="preview">
+		<h3>Default Tabs</h3><br>
+		<div id="defaultTabList" class="defaultTabList">
+			<table border="1" style="width:100%">
+				<tr>
+					<th>Tab Name</th>
+					<th>Excluded Product Pages</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>FAQ</td>
+					<td>1,2,3,4</td>
+					<td><a href="#">Edit Tab</a></td>
+				</tr>
+			</table>	
+		</div>
+		</div>
+	
+</div>
+
+<h3>Step 4) Create Tabs on Each Product Page</h3>
+
+</body>
+<footer></footer>
+</html>
