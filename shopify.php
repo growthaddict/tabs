@@ -1,9 +1,9 @@
 <?php
 class ShopifyClient {
-	public $shop_domain;
-	private $token;
-	private $api_key;
-	private $secret;
+	public $shop_domain = "https://dummy-product-page-app.myshopify.com" ;
+	private $token = "59575766c002bd11153a2d4cd3684aa5";
+	private $api_key = "41bef0bb82ad1f33eeb9e481f8c30be2";
+	private $secret = "477469ab7de143db0f25f5472f7ffa4d";
 	private $last_response_headers = null;
 
 	public function __construct($shop_domain, $token, $api_key, $secret) {
